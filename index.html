@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/monaco-editor@0.29.0/min/vs/editor/editor.main.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="editor-container">
+        <div class="editor-controls">
+            <button onclick="exportCode()">Export Code</button>
+            <input type="file" id="importInput" style="display: none;" />
+            <button onclick="importCode()">Import Code</button>
+            <label for="languageSelect">Select Language:</label>
+            <select id="languageSelect" onchange="changeEditor()">
+                <option value="cpp">C++</option>
+                <option value="csharp">C#</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+            </select>
+            <label for="themeSelect">Select Theme:</label>
+            <select id="themeSelect" onchange="changeTheme()">
+                <option value="vs-dark">Dark</option>
+                <option value="vs">Light</option>
+            </select>
+            <label for="lineNumbersCheckbox">Show Line Numbers:</label>
+            <input type="checkbox" id="lineNumbersCheckbox" onchange="toggleLineNumbers()">
+        </div>
+        <div id="editor" class="language-editor"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.29.0/min/vs/loader.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
