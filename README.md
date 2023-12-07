@@ -1,6 +1,6 @@
 # Code Editor
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)   <img src="https://img.shields.io/badge/made%20with-python-blue.svg" alt="made with Python"> <a href='https://github.com/harrsn' target='_blank'><img src='https://img.shields.io/github/followers/harrsn.svg?label=Follow&style=social'>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)   <img src="https://img.shields.io/badge/made%20with-javascript-orange.svg" alt="made with Javascript"> <a href='https://github.com/harrsn' target='_blank'><img src='https://img.shields.io/github/followers/harrsn.svg?label=Follow&style=social'>
 </a>
 
 A basic code editor written in JavaScript. Has functionality for C++, C#, JavaScript, and Python.
