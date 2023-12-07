@@ -19,3 +19,4 @@ To start the code editor, ensure all files from this repository are in the same 
 ./styles.css
 ./index.html
 ```
+Then open `index.html` in your preferred web browser.
