@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Set character set and viewport for responsiveness -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the title of the page -->
     <title>Code Editor</title>
+    <!-- Include Monaco Editor CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/monaco-editor@0.29.0/min/vs/editor/editor.main.css">
+    <!-- Include custom styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <!-- Main container for the code editor -->
     <div id="editor-container">
+        <!-- Controls section for various editor functions -->
         <div class="editor-controls">
+            <!-- Button to export code -->
             <button onclick="exportCode()">Export Code</button>
+            <!-- Input element for importing code from a file (hidden by default) -->
             <input type="file" id="importInput" style="display: none;" />
+            <!-- Button to import code -->
             <button onclick="importCode()">Import Code</button>
+            <!-- Dropdown for selecting the programming language -->
             <label for="languageSelect">Select Language:</label>
             <select id="languageSelect" onchange="changeEditor()">
                 <option value="cpp">C++</option>
@@ -20,17 +32,23 @@
                 <option value="javascript">JavaScript</option>
                 <option value="python">Python</option>
             </select>
+            <!-- Dropdown for selecting the theme -->
             <label for="themeSelect">Select Theme:</label>
             <select id="themeSelect" onchange="changeTheme()">
                 <option value="vs-dark">Dark</option>
                 <option value="vs">Light</option>
             </select>
+            <!-- Checkbox to toggle line numbers -->
             <label for="lineNumbersCheckbox">Show Line Numbers:</label>
             <input type="checkbox" id="lineNumbersCheckbox" onchange="toggleLineNumbers()">
         </div>
+        <!-- Container for the Monaco Editor -->
         <div id="editor" class="language-editor"></div>
     </div>
+    <!-- Include Monaco Editor loader script -->
     <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.29.0/min/vs/loader.js"></script>
+    <!-- Include custom script -->
     <script src="script.js"></script>
 </body>
+
 </html>
